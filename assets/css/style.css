@@ -1,0 +1,89 @@
+/*HEADER*/
+header {
+    position: fixed;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+/*Resize pictograms*/
+header nav ul li ul img {
+    width: 30px;
+}
+header>nav>ul>li>ul>li:first-child {
+    margin-right: 40px;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+header h1 {
+    font: 35px Roboto, Arial, 'sans-serif';
+    letter-spacing: -2px;
+}
+/*SECTION*/
+/*LANDING PAGE*/
+section.landing-page {
+    background: url("../img/background/concert.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section.landing-page p {
+    font: 45px Roboto, Arial, 'sans-serif';
+    color: #fff;
+    font-weight: bold;
+    text-shadow: -1px 2px 5px #222222
+}
+section.landing-page a img {
+    position: absolute;
+    bottom: 50px;
+}
+/*TIMELINE*/
+section.timeline {
+    background: url("../img/background/bg-timeline.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+section.timeline article {
+    background: #263d4f;
+    width: 480px;
+    font-family: Roboto, Arial, 'sans-serif';
+    margin-bottom: 30px;
+}
+section.timeline article>div.text-wrapper>img {
+    height: 70px;
+    width: 120px;
+}
+.title-article {
+    display: flex;
+    align-items: center;
+    background: #101620;
+    padding: 10px;
+}
+.text-article {
+    display: inline-block;
+    color: #f1f2f2;
+    margin-left: 20px;
+}
+.text-wrapper {
+    display: flex;
+    padding: 10px;
+}
+.title-article img {
+    width: 25px;
+    height: 25px;
+}
+.title-article h2 {
+    color: #f1f2f2;
+}
+.title-article p {
+    color: #58575e;
+}
