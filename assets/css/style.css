@@ -2,14 +2,14 @@
 header {
     position: fixed;
     width: 100%;
-    /*background: url("../img/background/flares.jpg");*/
+    background: rgba(0,0,0,0.1);
 }
 header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px 30px;
 }
 /*Resize pictograms*/
 header nav ul li ul img {
@@ -73,6 +73,8 @@ section.timeline article>div.text-wrapper>img {
     align-items: center;
     background: #101620;
     padding: 10px;
+    font-family: Roboto, Arial, 'sans-serif';
+    position: relative;
 }
 .text-article {
     display: inline-block;
@@ -180,4 +182,149 @@ section.period ul li a img {
 }
 section.period ul li a img:hover {
     opacity:0.7;
+}
+/*PUBLICATION*/
+.inner-publication {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.inner-publication>.title-article>.date {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #ffffff;
+}
+.inner-publication>p {
+    font: 16px Roboto, Arial, 'sans-serif';
+    margin: 20px;
+}
+.inner-publication>figure{
+    position: relative;
+}
+.inner-publication>figure>img {
+    width: 100%;
+}
+.inner-publication>figure>h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #1b75bc;
+    padding: 10px 20px;
+    font: 16px Roboto, Arial, 'sans-serif';
+    color: #ffffff;
+}
+.comment>article>.title-article>p:nth-child(2){
+    color: #1b75bc;
+    margin: 0 10px;
+}
+.comment>article>.title-article>p:last-child {
+    color: #d76153;
+    margin: 0 10px;
+}
+.text-comment {
+    display: flex;
+    align-items: center;
+    background: #263d4f;
+    border-bottom: 1px solid #676769;
+    font-family: Roboto, Arial, 'sans-serif';
+    padding: 10px;
+}
+.text-comment img {
+    width: 25px;
+    height: 25px;
+}
+.text-comment h3 {
+    color: #ffffff;
+    margin: 0 20px;
+}
+.text-comment p {
+    color: #7d8389;
+}
+.text-comment p:nth-child(3) {
+    width: 77%;
+    border-right: 1px solid #676769;
+}
+.text-comment p:nth-child(4) {
+    margin-left: 10px;
+}
+/*PROFILE*/
+section.profile {
+    font-family: Roboto, Arial, 'sans-serif';
+}
+section.profile>.inner-publication {
+    padding: 30px 300px;
+}
+section.profile>.header-profile {
+    background: url("../img/profile/background_profile.jpg") no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    text-align: center;
+}
+section.profile>.header-profile>img {
+    position: absolute;
+    bottom: -50px;
+    left: 200px;
+    width: 150px;
+}
+.profile-wrapper {
+    text-align: center;
+}
+.profile-sum-up {
+    background: #e7e8e9;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
+}
+.profile-sum-up h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.profile-sum-up p {
+    display: inline-block;
+}
+.quote {
+    background: #d1d3d4;
+    display: inline-block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+}
+button.subscribe {
+    position: absolute;
+    bottom: -90px;
+    left: 225px;
+    background: #ffffff;
+    border: 1px solid #29aae2;
+    color: #29aae2;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    transition-duration: 0.3s;
+}
+button.subscribe:hover {
+    color: #ffffff;
+    background: #29aae2;
+}
+button.add-publication {
+    display: block;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #1ea68b;
+    color: #1ea68b;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    transition-duration: 0.3s;
+}
+button.add-publication:hover {
+    color: #ffffff;
+    background: #1ea68b;
 }
