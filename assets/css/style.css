@@ -1,0 +1,102 @@
+/*NAVIGATION PAGE*/
+body {
+    background: #191a1c;
+}
+.container {
+    display: block;
+    margin: 0 auto;
+}
+.block{
+    width:200px;
+    height:100vh;
+    -webkit-transform:skew(-15deg);
+    -moz-transform:skew(-15deg);
+    -o-transform:skew(-15deg);
+    transform:skew(-15deg);
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.block:hover{
+    width: 400px;
+    border: 5px solid #ffd722;
+}
+.block-1:hover,
+.block-2:hover,
+.block-3:hover,
+.block-4:hover {
+    width: 700px;
+    opacity: 1;
+}
+.block-1,
+.block-2,
+.block-3,
+.block-4,
+.block-5 {
+    background-size: cover;
+    width:600px;
+    height:100vh;
+    transition: 0.3s ease;
+    opacity: 0.3;
+    -webkit-transform:skew(-165deg);
+    -moz-transform:skew(-165deg);
+    -o-transform:skew(-165deg);
+    transform:skew(-165deg);
+    position: absolute;
+    left: -70px;
+}
+.block-1 {
+    background: url("../img/nav/elvis.jpg") no-repeat 50% 0;
+}
+.block-2 {
+    background: url("../img/nav/james-brown.jpg") no-repeat 50% 0%;
+}
+.block-3 {
+    background: url("../img/nav/elton-john.jpg") no-repeat 50% 0%;
+}
+.block-4 {
+    background: url("../img/nav/mickael-jackson.jpg") no-repeat 50% 0%;
+}
+.block-5 {
+    background: url("../img/nav/nirvana.jpg") no-repeat 50% 0%;
+}
+
+/*TIMELINE PAGE*/
+h1 {
+    font: 36px Oswald;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+.container-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.block-album {
+    width: 200px;
+    height: 200px;
+    background: #162462;
+    margin: 10px;
+}
+.block-album-plus {
+    width: 400px;
+    height: 200px;
+    background: #162462;
+    margin: 10px;
+}
+/*TYPOGRAPHY*/
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica.otf');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../font/Oswald-Bold.ttf');
+}
