@@ -1,257 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Timeline Social Network">
-  <meta name="keywords" content="HTML,CSS,JavaScript, PHP, MySQL">
-  <meta name="author" content="Timusic">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timusic</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>Timusic</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Timeline Social Network">
+    <meta name="keywords" content="HTML,CSS,JavaScript, PHP, MySQL">
+    <meta name="author" content="Timusic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#"><h1>Timusic</h1></a></li>
-      <li>
-        <ul>
-          <li><a href="#"><img src="assets/img/pictogram/search.png" alt="Search"></a></li>
-          <li><a href="#"><img src="assets/img/pictogram/burger.png" alt="Menu"></a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
-<section class="landing-page">
-  <p>Immortalisez et partagez <br>
-    vos plus grands événements
-  </p>
-  <a href="#"><img src="assets/img/pictogram/scroll.png" alt="Scroll"></a>
-</section>
-<!--END OF LANDING PAGE SECTION-->
-<section class="timeline">
-  <button>Voir toutes les décennies</button>
-  <div class="article-wrapper">
-    <article>
-      <div class="title-article">
-        <img src="assets/img/profile/morgan.png" alt="Avatar">
-        <h2>Morgan</h2>
-        <p>publié il y a 2 jours</p>
-      </div>
-      <!--END OF TITLE ARTICLE-->
-      <div class="text-wrapper">
-        <img src="assets/img/twenty_one_pilots.jpg" alt="Group">
-        <div class="text-article">
-          <h3>Futur Group Explosive</h3>
-          <div>Twenty One Pilots...</div>
-          <a href="#">En savoir plus</a>
+<div class="container">
+    <div id="scene" class="scene">
+        <div class="layer" data-depth="1.00">
+            <!--BLOCK 1950-->
+            <a href="#">
+                <div class="block border">
+                    <div class="block-1"></div>
+                </div>
+            </a>
+            <!--END OF BLOCK 1950-->
+            <!--BLOCK 1960-->
+            <a href="#">
+                <div class="block border">
+                    <div class="block-2"></div>
+                </div>
+            </a>
+            <!--END OF BLOCK 1960-->
+            <!--BLOCK 1970-->
+            <a href="#">
+                <div class="block border">
+                    <div class="block-3"></div>
+                </div>
+            </a>
+            <!--END OF BLOCK 1970-->
+            <!--BLOCK 1980-->
+            <a href="#">
+                <div class="block border">
+                    <div class="block-4"></div>
+                </div>
+            </a>
+            <!--END OF BLOCK 1980-->
+            <!--BLOCK 1990-->
+            <a href="#">
+                <div class="block border">
+                    <div class="block-5"></div>
+                </div>
+            </a>
+            <!--END OF BLOCK 1990-->
         </div>
-        <!--END OF TEXT ARTICLE-->
-      </div>
-      <!--END OF TEXT WRAPPER-->
-    </article>
-    <article>
-      <div class="title-article">
-        <img src="assets/img/profile/yoda.png" alt="Avatar">
-        <h2>Yoda</h2>
-        <p>publié il y a 3 jours</p>
-      </div>
-      <!--END OF TITLE ARTICLE-->
-      <div class="text-wrapper">
-        <img src="assets/img/period/1970s.jpg" alt="Group">
-        <div class="text-article">
-          <h3>The Jimi Hendrix Experience</h3>
-          <p>Electric Ladyland...</p>
-          <a href="#">En savoir plus</a>
-        </div>
-        <!--END OF TEXT ARTICLE-->
-      </div>
-      <!--END OF TEXT WRAPPER-->
-    </article>
-    <button>En voir plus sur cette année</button>
-  </div>
-  <!--END OF ARTICLE WRAPPER-->
-  <aside>
-    <h2>Immortalisez une date</h2>
-    <form action="">
-      <label for="date">Date<input type="date" id="date"></label>
-      <label for="artist">Artiste<input type="text" id="artist"></label>
-      <label for="track">Titre<input type="text" id="track"></label>
-      <label for="description">Description<textarea id="description"></textarea></label>
-      <input type="submit" value="Envoyer">
-    </form>
-  </aside>
-</section>
-<!--END OF TIMELINE SECTION-->
-<section class="period">
-  <div class="title-period">
-    <h1><img src="assets/img/pictogram/calendar.png" alt="Calendar">Périodes</h1>
-    <!--CLOSE BUTTON-->
-    <button></button>
-  </div>
-  <!--END OF TITLE PERIOD-->
-  <ul>
-    <li><a href="">1900<br><img src="assets/img/period/1900s.jpg" alt="1900"></a></li>
-    <li><a href="">1910<br><img src="assets/img/period/1910s.jpg" alt="1910"></a></li>
-    <li><a href="">1920<br><img src="assets/img/period/1920s.jpg" alt="1920"></a></li>
-    <li><a href="">1930<br><img src="assets/img/period/1930s.jpg" alt="1930"></a></li>
-    <li><a href="">1940<br><img src="assets/img/period/1940s.jpg" alt="1940"></a></li>
-    <li><a href="">1950<br><img src="assets/img/period/1950s.jpg" alt="1950"></a></li>
-    <li><a href="">1960<br><img src="assets/img/period/1960s.jpg" alt="1960"></a></li>
-    <li><a href="">1970<br><img src="assets/img/period/1970s.jpg" alt="1970"></a></li>
-    <li><a href="">1980<br><img src="assets/img/period/1980s.jpg" alt="1980"></a></li>
-    <li><a href="">1990<br><img src="assets/img/period/1990s.jpg" alt="1990"></a></li>
-    <li><a href="">2000<br><img src="assets/img/period/2000s.jpg" alt="2000"></a></li>
-    <li><a href="">2010<br><img src="assets/img/period/2010s.png" alt="2010"></a></li>
-  </ul>
-</section>
-<!--END OF PERIOD SECTION-->
-<section class="publication">
-  <div class="title-period">
-    <h1><img src="assets/img/pictogram/calendar.png" alt="Calendar">1950s</h1>
-    <!--CLOSE BUTTON-->
-    <button></button>
-  </div>
-  <!--END OF TITLE PERIOD-->
-  <div class="inner-publication">
-    <div class="title-article">
-      <img src="assets/img/profile/yoda.png" alt="Avatar">
-      <h2>Master Yoda</h2>
-      <p>publié il y a 24 minutes</p>
-      <p class="date">1954</p>
+        <!--END OF DIV LAYER-->
     </div>
-    <!--END OF TITLE ARTICLE-->
-    <figure>
-      <img src="assets/img/period/1950s.jpg" alt="Elvis">
-      <h2>Elvis The King</h2>
-    </figure>
-    <p>Incontestablement l'un des meilleurs concerts d'ELVIS !
-      Bientôt 40 ans que tu es parti ELVIS, mais dans nos coeurs tu es toujours présent !﻿
-    </p>
-    <div class="comment">
-      <article>
-        <div class="title-article">
-          <img src="assets/img/pictogram/comment.png" alt="Commentaires">
-          <p>50K commentaires</p>
-          <img src="assets/img/pictogram/like.png" alt="Aime">
-          <p>500 aimes</p>
-        </div>
-        <!--END OF TITLE ARTICLE-->
-        <div class="text-comment">
-          <img src="assets/img/profile/yoda.png" alt="Avatar">
-          <h3>Master Yoda</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fuga laudantium non quos
-            repellendus reprehenderit sunt tenetur voluptas. Consectetur consequatur distinctio dolores excepturi
-            illo illum magnam reprehenderit similique veniam voluptatem?
-          </p>
-          <p>publié il y a 2h</p>
-        </div>
-        <!--END OF TEXT COMMENT-->
-        <div class="text-comment">
-          <img src="assets/img/profile/yoda.png" alt="Avatar">
-          <h3>Master Yoda</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi iusto nam reprehenderit veritatis.
-            Accusamus aut corporis deserunt doloribus ex iste, iure porro quidem quisquam rerum, saepe sint, unde.
-            Deleniti.
-          </p>
-          <p>publié il y a 2h</p>
-        </div>
-        <!--END OF TEXT COMMENT-->
-      </article>
-    </div>
-    <!--END OF COMMENT-->
-  </div>
-  <!--END OF INNER PUBLICATION-->
-</section>
-<!--END OF PUBLICATION SECTION-->
-<section class="profile">
-  <div class="header-profile">
-    <img src="assets/img/profile/yoda.png" alt="Avatar Profil">
-    <button class="subscribe">S'abonner</button>
-  </div>
-  <!--END OF HEADER PROFILE-->
-  <div class="profile-wrapper">
-    <div class="profile-sum-up">
-      <h1>Master Yoda</h1>
-      <p>900 ans</p>
-      <p>1 000 000 abonnés</p>
-      <p>100 000 amis</p>
-    </div>
-    <!--END OF PROFILE SUM-UP-->
-  </div>
-  <!--END OF PROFILE WRAPPER-->
-  <div class="profile-wrapper">
-    <div class="quote">
-      <p>"Le côté obscur de la Force, redouter tu dois. Difficile à voir. Toujours en mouvement est l'avenir."</p>
-    </div>
-    <!--END OF QUOTE-->
-  </div>
-  <!--END OF PROFILE WRAPPER-->
-  <button class="add-publication">Immortalise un moment</button>
-  <div class="inner-publication">
-    <div class="title-article">
-      <img src="assets/img/profile/yoda.png" alt="Avatar">
-      <h2>Master Yoda</h2>
-      <p>publié il y a 24 minutes</p>
-      <p class="date">1954</p>
-    </div>
-    <!--END OF TITLE ARTICLE-->
-    <figure>
-      <img src="assets/img/period/1950s.jpg" alt="Elvis">
-      <h2>Elvis The King</h2>
-    </figure>
-    <p>Incontestablement l'un des meilleurs concerts d'ELVIS !
-      Bientôt 40 ans que tu es parti ELVIS, mais dans nos coeurs tu es toujours présent !﻿
-    </p>
-    <div class="comment">
-      <article>
-        <div class="title-article">
-          <img src="assets/img/pictogram/comment.png" alt="Commentaires">
-          <p>50K commentaires</p>
-          <img src="assets/img/pictogram/like.png" alt="Aime">
-          <p>500 aimes</p>
-        </div>
-        <!--END OF TITLE ARTICLE-->
-        <div class="text-comment">
-          <img src="assets/img/profile/yoda.png" alt="Avatar">
-          <h3>Master Yoda</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fuga laudantium non quos
-            repellendus reprehenderit sunt tenetur voluptas. Consectetur consequatur distinctio dolores excepturi
-            illo illum magnam reprehenderit similique veniam voluptatem?
-          </p>
-          <p>publié il y a 2h</p>
-        </div>
-        <!--END OF TEXT COMMENT-->
-        <div class="text-comment">
-          <img src="assets/img/profile/yoda.png" alt="Avatar">
-          <h3>Master Yoda</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi iusto nam reprehenderit veritatis.
-            Accusamus aut corporis deserunt doloribus ex iste, iure porro quidem quisquam rerum, saepe sint, unde.
-            Deleniti.
-          </p>
-          <p>publié il y a 2h</p>
-        </div>
-        <!--END OF TEXT COMMENT-->
-      </article>
-    </div>
-    <!--END OF COMMENT-->
-  </div>
-  <!--END OF INNER PUBLICATION-->
-  <div class="friend-wrapper">
-    <h2>Amis</h2>
-    <div class="friend">
-      <img src="assets/img/profile/morgan.png" alt="Ami 1">
-      <h3>Morgan</h3>
-    </div>
-    <div class="friend">
-      <img src="assets/img/profile/yoda.png" alt="Ami 2">
-      <h3>Yoda</h3>
-    </div>
-  </div>
-</section>
-<!--END OF PROFILE SECTION-->
+    <!--END OF DIV SCENE-->
+</div>
+<!--END OF DIV CONTAINER-->
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="assets/js/parallax.js"></script>
+<script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+</script>
+<script>
+    $('.block-1')
+            .on('click', function () {
+                $('.block-1').css({
+                    'background': 'black',
+                    'width': '100%'
+                });
+            });
+</script>
 </body>
 </html>

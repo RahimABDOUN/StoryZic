@@ -46,3 +46,5 @@ crashlytics-build.properties
 fabric.properties
 
 .idea
+assets/old/old.html
+assets/old/old.css
