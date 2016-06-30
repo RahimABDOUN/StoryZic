@@ -72,24 +72,110 @@ h1 {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: -2px;
+    margin: 36px 0;
+}
+nav {
+    float: right;
+    display: block;
+    width: 100px;
+    height: 50em;
+}
+.timeline {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    height: 450px;
+    width: 80px;
+    display: block;
+    float: right;
+    border-left: 1px solid white;
 }
 .container-album {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+}
+.content-album {
+    width: 200px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    background: #293b44;
+    opacity: 0.8;
+    padding: 10px;
+}
+.content-album h2 {
+    font: 16px Oswald;
+    color: #ffffff;
+}
+.content-album h3 {
+    font: 16px Helvetica;
+    color: #cccccc;
 }
 .block-album {
+    margin: 10px;
+    position: relative;
+}
+.block-album img {
     width: 200px;
     height: 200px;
-    background: #162462;
-    margin: 10px;
 }
-.block-album-plus {
-    width: 400px;
-    height: 200px;
-    background: #162462;
-    margin: 10px;
+/*CONNECTION AND REGISTRATION PAGES*/
+.connection,
+.registration {
+    text-align: center;
+}
+section.connection h2,
+section.registration h2 {
+    font: 36px Oswald;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 24px 0;
+}
+input{
+    color: #FFF;
+    font: 16px Helvetica;
+}
+input[type=text]{
+    width: 263px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    background-color: #393b40;
+    margin: 6px 0;
+    padding: 0 12px;
+}
+input[type=email]{
+    width: 263px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    background-color: #393b40;
+    margin: 6px 0;
+    padding: 0 12px;
+}
+input[type=password]{
+    width: 263px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    background-color: #393b40;
+    margin: 6px 0;
+    padding: 0 12px;
+}
+input[type="submit"] {
+    border: 0;
+    background: #393b40 url("../img/pictogram/button_submit.png") no-repeat ;
+    margin: 20px 0;
+    height: 55px;
+    width: 52px;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+    box-shadow: #1b75bc 0 0 40px 10px;
+    border-radius: 50%;
 }
 /*TYPOGRAPHY*/
 @font-face {
