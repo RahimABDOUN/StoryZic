@@ -50,17 +50,17 @@
     calibrationThreshold: 100,
     calibrationDelay: 500,
     supportDelay: 500,
-    calibrateX: false,
+    calibrateX: true,
     calibrateY: true,
     invertX: true,
     invertY: true,
-    limitX: false,
+    limitX: true,
     limitY: false,
-    scalarX: 10.0,
+    scalarX: 30.0,
     scalarY: 0, //defaut 10.0
     frictionX: 0.1,
     frictionY: 0.1,
-    originX: 0.5,
+    originX: 0,
     originY: 0.5
   };
 
