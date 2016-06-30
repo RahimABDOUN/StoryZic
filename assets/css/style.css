@@ -1,3 +1,9 @@
+/*HEADER*/
+header {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
 /*NAVIGATION PAGE*/
 body {
     background: #191a1c;
@@ -64,15 +70,19 @@ body {
 .block-5 {
     background: url("../img/nav/nirvana.jpg") no-repeat 50% 0%;
 }
-
+/*NAVIGATION TIMELINE*/
+.timeline ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font: 20px Helvetica, Arial, 'sans-serif';
+}
 /*TIMELINE PAGE*/
-h1 {
+header h1 {
     font: 36px Oswald;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: -2px;
-    margin: 36px 0;
 }
 nav {
     float: right;
@@ -163,7 +173,7 @@ input[type=password]{
     margin: 6px 0;
     padding: 0 12px;
 }
-input[type="submit"] {
+input[type="submit"]{
     border: 0;
     background: #393b40 url("../img/pictogram/button_submit.png") no-repeat ;
     margin: 20px 0;
@@ -177,43 +187,77 @@ input[type="submit"]:hover {
     box-shadow: #1b75bc 0 0 40px 10px;
     border-radius: 50%;
 }
-/* The Modal (background) */
+/*MODAL*/
+/*Comment*/
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: Roboto, Arial, 'sans-serif';
 }
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
+.comment {
+    display: inline-block;
+    width: 540px;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.left-column-modal {
+    display: inline-block;
+    width: 400px;
+}
+.title-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #101620;
+    padding: 10px;
+    position: relative;
+}
+.title-article h1,
+.title-article h2 {
+    color: #fff;
+    font-family: Helvetica, Arial, 'sans-serif';
+}
+.title-article h1 {
+    font: 30px Oswald, Arial, 'sans-serif';
+    padding-bottom: 10px;
+}
+.comment>article>.title-article>p:nth-child(2){
+    color: #1b75bc;
+    margin: 0 10px;
+}
+.comment>article>.title-article>p:last-child {
+    color: #d76153;
+    margin: 0 10px;
+}
+.text-comment {
+    display: flex;
+    align-items: center;
+    background: #263d4f;
+    border-bottom: 1px solid #676769;
+    font-family: Helvetica, Arial, 'sans-serif';
+    padding: 10px;
+}
+.text-comment img {
+    width: 25px;
+    height: 25px;
+}
+.text-comment h3 {
+    color: #ffffff;
+    margin: 0 20px;
+}
+.text-comment p {
+    color: #7d8389;
+}
+.text-comment p:nth-child(3) {
+    width: 77%;
+    border-right: 1px solid #676769;
+}
+.text-comment p:nth-child(4) {
+    margin-left: 10px;
+}
+.information-album {
+    background: #0d141d;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    font: 16px Helvetica, Arial, 'sans-serif';
 }
 /*TYPOGRAPHY*/
 @font-face {
