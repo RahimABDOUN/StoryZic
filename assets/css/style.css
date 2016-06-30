@@ -4,6 +4,9 @@ header {
     margin-bottom: 20px;
     border-bottom: 1px solid #ffffff;
 }
+header a {
+    text-decoration: none;
+}
 /*NAVIGATION PAGE*/
 body {
     background: #191a1c;
@@ -71,19 +74,6 @@ body {
     background: url("../img/nav/nirvana.jpg") no-repeat 50% 0%;
 }
 /*NAVIGATION TIMELINE*/
-.timeline ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font: 20px Helvetica, Arial, 'sans-serif';
-}
-/*TIMELINE PAGE*/
-header h1 {
-    font: 36px Oswald;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-}
 nav {
     float: right;
     display: block;
@@ -94,11 +84,40 @@ nav {
     position: fixed;
     top: 20%;
     right: 0;
-    height: 450px;
-    width: 80px;
+    height: 470px;
+    width: 100px;
     display: block;
     float: right;
     border-left: 1px solid white;
+}
+.timeline ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font: 20px Helvetica, Arial, 'sans-serif';
+}
+.timeline ul {
+    position: relative;
+}
+.timeline ul li {
+    padding: 20px;
+}
+.side-line {
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    left: -10px;
+}
+.timeline ul li:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff;
+}
+/*TIMELINE PAGE*/
+header h1 {
+    font: 36px Oswald;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
 }
 .container-album {
     display: flex;
