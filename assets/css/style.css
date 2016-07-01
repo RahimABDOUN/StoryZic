@@ -1,13 +1,50 @@
 /*HEADER*/
 header {
-    padding: 20px 0;
+    text-align: center;
+    padding: 20px 30px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ffffff;
 }
-header a {
+header h1 {
+    display: inline-block;
+    font: 36px Oswald, Arial, 'sans-serif';
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+header ul li a {
     text-decoration: none;
 }
-/*NAVIGATION PAGE*/
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a:first-child {
+    color: #fff;
+    font: 18px Oswald, Arial, 'sans-serif';
+    display: inline-block;
+}
+header nav ul li a:first-child h2 {
+    display: inline-block;
+    align-self: inherit;
+    vertical-align: 10px;
+    margin-left: 10px;
+}
+header nav ul li:last-child {
+    margin-left: 30px;
+}
+header nav ul li a img {
+    width: 40px;
+}
+header nav ul li ul li a img {
+    width: 25px;
+}
+    /*NAVIGATION PAGE*/
 body {
     background: #191a1c;
 }
@@ -74,57 +111,80 @@ body {
     background: url("../img/nav/nirvana.jpg") no-repeat 50% 0%;
 }
 /*NAVIGATION TIMELINE*/
-nav {
+.timeline-nav {
     float: right;
     display: block;
+    height: 550px;
     width: 100px;
-    height: 50em;
+    border-left: 1px dashed #888888;
 }
 .timeline {
     position: fixed;
     top: 20%;
     right: 0;
-    height: 470px;
+    height: 420px;
     width: 100px;
     display: block;
     float: right;
-    border-left: 1px solid white;
+    border-left: 1px solid #888888;
 }
 .timeline ul li a {
-    color: #ffffff;
+    color: #888888;
     text-decoration: none;
-    font: 20px Helvetica, Arial, 'sans-serif';
+    font: 18px Helvetica, Arial, 'sans-serif';
 }
 .timeline ul {
     position: relative;
 }
 .timeline ul li {
-    padding: 20px;
+    padding: 30px;
 }
 .side-line {
-    border-bottom: 1px solid #fff;
     position: absolute;
     width: 20px;
-    height: 12px;
+    height: 1px;
     left: -10px;
+    background: #888888;
 }
-.timeline ul li:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff;
+.side-line p{
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+.timeline ul li a:active,
+.timeline ul li a:hover,
+.active {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #fff;
+}
+.side-line:active,
+.side-line:hover,
+.active {
+    background: #fff;
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff;
 }
 /*TIMELINE PAGE*/
-header h1 {
-    font: 36px Oswald;
+section.album h1 {
     text-align: center;
-    color: #ffffff;
+    font: 50px Oswald, Arial, 'sans-serif';
+    color: #fff;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: 1px;
+    padding: 40px 100px 60px;
 }
 .container-album {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20px;
 }
 .content-album {
-    width: 200px;
+    width: 250px;
     position: absolute;
     bottom: 3px;
     left: 0;
@@ -133,20 +193,24 @@ header h1 {
     padding: 10px;
 }
 .content-album h2 {
-    font: 16px Oswald;
+    font: 16px Oswald, Arial, 'sans-serif';
     color: #ffffff;
 }
 .content-album h3 {
-    font: 16px Helvetica;
+    font: 16px Helvetica, Arial, 'sans-serif';
     color: #cccccc;
 }
 .block-album {
     margin: 10px;
     position: relative;
+    opacity: 0.5;
 }
 .block-album img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+}
+.block-album:hover {
+    opacity: 1;
 }
 /*CONNECTION AND REGISTRATION PAGES*/
 .connection,
@@ -163,7 +227,7 @@ section.registration h2 {
 }
 input{
     color: #FFF;
-    font: 16px Helvetica;
+    font: 16px Helvetica, Arial, 'sans-serif';
 }
 input[type=text]{
     width: 263px;
@@ -209,7 +273,7 @@ input[type="submit"]:hover {
 /*MODAL*/
 /*Comment*/
 .modal {
-    font-family: Roboto, Arial, 'sans-serif';
+    font-family: Helvetica, Arial, 'sans-serif';
 }
 .comment {
     display: inline-block;
@@ -262,14 +326,16 @@ input[type="submit"]:hover {
     margin: 0 20px;
 }
 .text-comment p {
-    color: #7d8389;
+    color: #fff;
+    position: relative;
 }
 .text-comment p:nth-child(3) {
     width: 77%;
     border-right: 1px solid #676769;
 }
-.text-comment p:nth-child(4) {
+.text-comment small {
     margin-left: 10px;
+    color: #7d8389;
 }
 .information-album {
     background: #0d141d;
